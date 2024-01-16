@@ -9,7 +9,7 @@ const Navbar = () => {
   const [mode, setMode] = useState();
 
   return (
-    <nav className="backdrop-blur-sm bg-white/50 dark:bg-white/5 flex items-center fixed top-0 justify-center w-full h-12">
+    <nav className="backdrop-blur-sm bg-white/50 dark:bg-white/5 flex items-center fixed z-20 top-0 justify-center w-full h-12">
       {data.map((content, key) => (
         <Link
           to={`${content}`}
